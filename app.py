@@ -7,7 +7,7 @@ from app_helper import data_type, selected_features
 app = Flask(__name__)
 
 # Load your trained model
-model = dill.load(open('dt_model.dill', 'rb'))
+model = dill.load(open('flask_dt_model.dill', 'rb'))
 
 # Define a route to render the HTML form
 @app.route('/')
